@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: rgba(0, 137, 232, 0.5);
+}
+.container {
+  /* width: 80%;
+  margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  row-gap: 50px;
+}
+.container h1 {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+.structure {
+  position: relative;
+  width: 600px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.dropUp {
+  width: 500px;
+  height: 70px;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: none;
+  position: absolute;
+  z-index: 0;
+  top: -65%;
+}
+
+.songName {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.seek-bar {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-appearance: none;
+  width: 60%;
+  height: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  background: #7fc8a9;
+}
+.seek-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 20px;
+  box-shadow: -400px 0 0 400px #d5eebb;
+}
+
+.main:hover .dropUp {
+  display: inline-block;
+  transition: 0.5s ease-in;
+}
+.disc {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-image: url("https://images.unsplash.com/photo-1601128092089-35891312a94f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhpcCUyMGhvcHxlbnwwfHwwfHx8MA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  animation: circle 10s linear infinite;
+  position: absolute;
+  top: -40px;
+  left: 40px;
+  animation-play-state: paused;
+}
+.disc.play {
+  animation-play-state: running;
+}
+@keyframes circle {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.center {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.disc,
+.center {
+  border-radius: 50%;
+}
+.fa-solid {
+  font-size: 45px;
+  color: black;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.fa-solid:hover {
+  color: green;
+}
+.btn {
+  background-color: white;
+  border: none;
+}
+.media {
+  display: flex;
+  margin-left: 90px;
+  gap: 50px;
+}

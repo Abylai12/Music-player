@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/9cd0f99006.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Music Player</h1>
+      <div class="main">
+        <div class="dropUp">
+          <h4 class="songName">Song Name</h4>
+          <input type="range" value="0" class="seek-bar" />
+        </div>
+        <div class="structure">
+          <div class="disc">
+            <div class="center"></div>
+          </div>
+          <div class="media">
+            <button class="btn" id="btnBwrd">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="btn" id="btnPse">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="btn" id="btnFrwd">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+          </div>
+        </div>
+        <audio
+          src="./assets/songs/dramatic-hip-hop-music-background-jazz-music-for-short-video-148505.mp3"
+        ></audio>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
