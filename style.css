@@ -136,3 +136,12 @@ body {
   margin-left: 90px;
   gap: 50px;
 }
+.hide {
+  display: none !important;
+}
+/* #pause {
+  display: none;
+} */
+/* .player {
+  display: block;
+} */
