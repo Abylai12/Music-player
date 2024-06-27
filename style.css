@@ -139,9 +139,9 @@ body {
 .hide {
   display: none !important;
 }
-/* #pause {
+#pause {
   display: none;
-} */
-/* .player {
-  display: block;
-} */
+}
+.unhide {
+  display: block !important;
+}
